@@ -1,0 +1,23 @@
+{
+  "name": "eyf-api",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "eyf-api",
+  "workspaceFolder": "/usr/src/app",
+  "overrideCommand": true,
+  "shutdownAction": "stopCompose",
+  "postCreateCommand": "yarn install",
+  "forwardPorts": [3000, 5432],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "typescript.enablePromptUseWorkspaceTsdk": true
+      }
+    }
+  }
+}
