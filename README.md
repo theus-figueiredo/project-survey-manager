@@ -1,4 +1,4 @@
-# EYF API
+# project survey manager API
 
 Backend da aplicação desenvolvido com `NestJS`, `TypeORM`, `PostgreSQL` e `Docker Compose`.
 
